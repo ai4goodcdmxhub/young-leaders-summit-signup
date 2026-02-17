@@ -8,7 +8,7 @@ const registrationSchema = z.object({
   email: z.string().trim().email("Ingresa un correo válido").max(255),
   telefono: z.string().trim().min(7, "Ingresa un teléfono válido").max(20),
   institucion: z.string().trim().min(2, "Ingresa tu institución").max(200),
-  rol: z.string().min(1, "Selecciona tu rol")
+  rol: z.string().min(1, "Selecciona tu rol"),
 });
 
 type FormData = z.infer<typeof registrationSchema>;
@@ -20,7 +20,7 @@ const RegistrationForm = () => {
     email: "",
     telefono: "",
     institucion: "",
-    rol: ""
+    rol: "",
   });
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [submitted, setSubmitted] = useState(false);
@@ -47,7 +47,7 @@ const RegistrationForm = () => {
     setSubmitted(true);
     toast({
       title: "¡Registro exitoso! 🎉",
-      description: "Te hemos registrado al Summit de Educación 2026. Revisa tu correo para más información."
+      description: "Te hemos registrado al Summit de Educación 2026. Revisa tu correo para más información.",
     });
   };
 
@@ -58,8 +58,8 @@ const RegistrationForm = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="max-w-lg mx-auto text-center bg-card rounded-2xl p-12 border border-border">
-
+            className="max-w-lg mx-auto text-center bg-card rounded-2xl p-12 border border-border"
+          >
             <div className="text-6xl mb-4">🎉</div>
             <h2 className="text-3xl font-display font-bold text-primary">¡Gracias por registrarte!</h2>
             <p className="mt-4 text-muted-foreground">
@@ -67,20 +67,20 @@ const RegistrationForm = () => {
             </p>
           </motion.div>
         </div>
-      </section>);
-
+      </section>
+    );
   }
 
   return (
     <section id="registro" className="py-24 bg-background">
-      <div className="<a\n  href=\"https://luma.com/event/evt-I70g6WnBivNiFhv\"\n  class=\"luma-checkout--button\"\n  data-luma-action=\"checkout\"\n  data-luma-event-id=\"evt-I70g6WnBivNiFhv\"\n>\n  Register for Event\n</a>\n\n<script id=\"luma-checkout\" src=\"https://embed.lu.ma/checkout-button.js\"></script>">
+      <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-xl mx-auto">
-
+          className="max-w-xl mx-auto"
+        >
           <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-primary">
               Regístrate
@@ -92,31 +92,31 @@ const RegistrationForm = () => {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-card rounded-2xl p-8 md:p-10 border border-border shadow-sm space-y-5">
-
+            className="bg-card rounded-2xl p-8 md:p-10 border border-border shadow-sm space-y-5"
+          >
             {([
-            { name: "nombre", label: "Nombre completo", type: "text", placeholder: "Tu nombre" },
-            { name: "email", label: "Correo electrónico", type: "email", placeholder: "tu@correo.com" },
-            { name: "telefono", label: "Teléfono", type: "tel", placeholder: "+52 ..." },
-            { name: "institucion", label: "Institución / Organización", type: "text", placeholder: "Nombre de tu institución" }] as
-            const).map((field) =>
-            <div key={field.name}>
+              { name: "nombre", label: "Nombre completo", type: "text", placeholder: "Tu nombre" },
+              { name: "email", label: "Correo electrónico", type: "email", placeholder: "tu@correo.com" },
+              { name: "telefono", label: "Teléfono", type: "tel", placeholder: "+52 ..." },
+              { name: "institucion", label: "Institución / Organización", type: "text", placeholder: "Nombre de tu institución" },
+            ] as const).map((field) => (
+              <div key={field.name}>
                 <label className="block text-sm font-medium text-foreground mb-1.5">
                   {field.label}
                 </label>
                 <input
-                name={field.name}
-                type={field.type}
-                placeholder={field.placeholder}
-                value={form[field.name]}
-                onChange={handleChange}
-                className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow" />
-
-                {errors[field.name] &&
-              <p className="mt-1 text-sm text-destructive">{errors[field.name]}</p>
-              }
+                  name={field.name}
+                  type={field.type}
+                  placeholder={field.placeholder}
+                  value={form[field.name]}
+                  onChange={handleChange}
+                  className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+                />
+                {errors[field.name] && (
+                  <p className="mt-1 text-sm text-destructive">{errors[field.name]}</p>
+                )}
               </div>
-            )}
+            ))}
 
             <div>
               <label className="block text-sm font-medium text-foreground mb-1.5">
@@ -126,8 +126,8 @@ const RegistrationForm = () => {
                 name="rol"
                 value={form.rol}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow">
-
+                className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+              >
                 <option value="">Selecciona tu rol</option>
                 <option value="estudiante">Estudiante</option>
                 <option value="docente">Docente</option>
@@ -135,24 +135,24 @@ const RegistrationForm = () => {
                 <option value="emprendedor">Emprendedor</option>
                 <option value="otro">Otro</option>
               </select>
-              {errors.rol &&
-              <p className="mt-1 text-sm text-destructive">{errors.rol}</p>
-              }
+              {errors.rol && (
+                <p className="mt-1 text-sm text-destructive">{errors.rol}</p>
+              )}
             </div>
 
             <motion.button
               type="submit"
               className="w-full bg-primary text-primary-foreground font-display font-semibold text-lg py-4 rounded-lg hover:bg-navy-light transition-colors shadow-md mt-4"
               whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}>
-
+              whileTap={{ scale: 0.98 }}
+            >
               Confirmar Registro
             </motion.button>
           </form>
         </motion.div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default RegistrationForm;
