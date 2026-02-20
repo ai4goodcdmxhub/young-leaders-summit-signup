@@ -41,7 +41,7 @@ const speakers = [
 
 const SpeakersSection = () => {
   return (
-    <section className="py-24 bg-background">
+    <section id="ponentes" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -68,9 +68,9 @@ const SpeakersSection = () => {
               transition={{ duration: 0.4, delay: i * 0.07 }}
               className="flex flex-col items-center text-center bg-card rounded-xl border border-border p-6 hover:border-secondary transition-colors"
             >
-              {/* Avatar placeholder */}
-              <div className="w-20 h-20 rounded-full bg-secondary/20 border-2 border-secondary/40 flex items-center justify-center mb-4">
-                <User className="w-9 h-9 text-primary/50" />
+              {/* Avatar with yellow background */}
+              <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-4 shadow-md">
+                <User className="w-9 h-9 text-secondary-foreground" />
               </div>
               <p className="font-display font-semibold text-primary text-sm leading-snug mb-1">
                 {speaker.name}

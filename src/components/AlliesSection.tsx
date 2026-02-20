@@ -5,12 +5,11 @@ import uadecLogo from "@/assets/logos/uadec.png";
 import alexandriaLogo from "@/assets/logos/alexandria.jpg";
 import cletecLogo from "@/assets/logos/cletec.png";
 import scienkoLogo from "@/assets/logos/scienko.png";
+import syncLogo from "@/assets/logos/sync.jpeg";
+import freepikLogo from "@/assets/logos/freepik.png";
 
 const organizers = [
-  {
-    name: "Young AI Leaders Community",
-    logo: youngAiLeadersLogo,
-  },
+  { name: "Young AI Leaders Community · Mexico City Hub", logo: youngAiLeadersLogo },
 ];
 
 const allies = [
@@ -19,16 +18,21 @@ const allies = [
   { name: "Consejo Latinoamericano de Ética en Tecnología A.C.", logo: cletecLogo },
   { name: "UAdeC", logo: uadecLogo },
   { name: "Scienko", logo: scienkoLogo },
+  { name: "Sync.", logo: syncLogo },
+  { name: "Freepik", logo: freepikLogo },
   { name: "KidGeeniers", logo: null },
-  { name: "Freepik", logo: null },
 ];
 
 const LogoCard = ({ name, logo }: { name: string; logo: string | null }) => (
-  <div className="flex items-center justify-center p-6 bg-background rounded-xl border border-border hover:border-secondary transition-colors h-32">
+  <div className="flex items-center justify-center p-6 bg-card rounded-xl border border-border hover:border-secondary transition-colors h-32">
     {logo ? (
-      <img src={logo} alt={name} className="max-h-20 max-w-full object-contain" />
+      <img
+        src={logo}
+        alt={name}
+        className="max-h-20 max-w-full object-contain mix-blend-multiply"
+      />
     ) : (
-      <span className="text-sm font-display font-semibold text-muted-foreground text-center">
+      <span className="text-sm font-display font-semibold text-muted-foreground text-center leading-snug">
         {name}
       </span>
     )}
@@ -37,7 +41,7 @@ const LogoCard = ({ name, logo }: { name: string; logo: string | null }) => (
 
 const AlliesSection = () => {
   return (
-    <section className="py-24 bg-background">
+    <section id="aliados" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Organizers */}
         <motion.div
@@ -62,13 +66,13 @@ const AlliesSection = () => {
           {organizers.map((org) => (
             <div
               key={org.name}
-              className="flex items-center justify-center p-8 bg-card rounded-xl border border-border h-40 w-72"
+              className="flex items-center justify-center p-8 bg-card rounded-xl border border-border h-44 w-80"
             >
               {org.logo && (
                 <img
                   src={org.logo}
                   alt={org.name}
-                  className="max-h-28 max-w-full object-contain"
+                  className="max-h-32 max-w-full object-contain"
                 />
               )}
             </div>
