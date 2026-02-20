@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import youngAiLeadersLogo from "@/assets/logos/young-ai-leaders.png";
-import enadLogo from "@/assets/logos/enad.png";
+import enadLogo from "@/assets/logos/enad-transparent.png";
 
 const navLinks = [
   { label: "Ponentes", href: "#ponentes" },
