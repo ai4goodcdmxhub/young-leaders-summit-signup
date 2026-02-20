@@ -24,6 +24,10 @@ const HeroSection = () => {
             de Educación
           </h1>
 
+          <p className="mt-4 text-base md:text-lg font-display font-medium text-primary/70 tracking-wide uppercase">
+            Estrategia Nacional de Alfabetización Digital
+          </p>
+
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center text-primary font-display text-xl font-medium">
             <span className="bg-card/80 backdrop-blur-sm px-6 py-3 rounded-lg border border-border">
               📅 17–20 Marzo
