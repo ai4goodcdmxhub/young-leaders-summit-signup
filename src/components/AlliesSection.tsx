@@ -7,6 +7,7 @@ import cletecLogo from "@/assets/logos/cletec.png";
 import scienkoLogo from "@/assets/logos/scienko.png";
 import syncLogo from "@/assets/logos/sync.jpeg";
 import freepikLogo from "@/assets/logos/freepik.png";
+import kidgineerLogo from "@/assets/logos/kidgineers.avif";
 
 const organizers = [
   { name: "Young AI Leaders Community · Mexico City Hub", logo: youngAiLeadersLogo },
@@ -20,7 +21,7 @@ const allies = [
   { name: "Scienko", logo: scienkoLogo },
   { name: "Sync.", logo: syncLogo },
   { name: "Freepik", logo: freepikLogo },
-  { name: "KidGeeniers", logo: null },
+  { name: "KidGineers", logo: kidgineerLogo },
 ];
 
 const LogoCard = ({ name, logo }: { name: string; logo: string | null }) => (
