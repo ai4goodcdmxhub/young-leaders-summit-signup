@@ -1,12 +1,8 @@
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-  const scrollToRegister = () => {
-    document.getElementById("registro")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-gold-light via-secondary/30 to-background" />
       <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
@@ -37,14 +33,20 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <motion.button
-            onClick={scrollToRegister}
-            className="mt-10 bg-primary text-primary-foreground font-display font-semibold text-lg px-10 py-4 rounded-lg hover:bg-navy-light transition-colors shadow-lg"
+          <motion.div
+            className="mt-10 inline-block"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
           >
-            ¡Regístrate ahora!
-          </motion.button>
+            <a
+              href="https://lu.ma/evt-I70g6WnBivNiFhv"
+              className="luma-checkout--button inline-block bg-primary text-primary-foreground font-display font-semibold text-lg px-10 py-4 rounded-lg hover:bg-navy-light transition-colors shadow-lg"
+              data-luma-action="checkout"
+              data-luma-event-id="evt-I70g6WnBivNiFhv"
+            >
+              ¡Regístrate ahora!
+            </a>
+          </motion.div>
         </motion.div>
       </div>
     </section>
