@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import Countdown from "./Countdown";
+import aioSitting from "@/assets/robots/aio-sitting.png";
+import aioRunning from "@/assets/robots/aio-running.png";
 
 const HeroSection = () => {
   return (
@@ -6,6 +9,26 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-gold-light via-secondary/30 to-background" />
       <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
+
+      {/* Decorative robots */}
+      <motion.img
+        src={aioSitting}
+        alt=""
+        aria-hidden
+        className="absolute bottom-8 left-6 w-24 md:w-32 opacity-60 pointer-events-none hidden md:block"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 0.6, y: 0 }}
+        transition={{ duration: 1, delay: 1 }}
+      />
+      <motion.img
+        src={aioRunning}
+        alt=""
+        aria-hidden
+        className="absolute top-32 right-8 w-20 md:w-28 opacity-50 pointer-events-none hidden lg:block"
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 0.5, x: 0 }}
+        transition={{ duration: 1, delay: 1.2 }}
+      />
 
       <div className="relative z-10 container mx-auto px-6 py-20 text-center">
         <motion.div
@@ -51,6 +74,8 @@ const HeroSection = () => {
               ¡Regístrate ahora!
             </a>
           </motion.div>
+
+          <Countdown />
         </motion.div>
       </div>
     </section>

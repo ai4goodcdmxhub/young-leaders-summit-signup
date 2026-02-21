@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Lightbulb, Users, Brain, Rocket } from "lucide-react";
+import aioWave from "@/assets/robots/aio-wave.png";
 
 const features = [
   {
@@ -26,8 +27,18 @@ const features = [
 
 const EventInfo = () => {
   return (
-    <section className="py-24 bg-card">
-      <div className="container mx-auto px-6">
+    <section className="relative py-24 bg-card overflow-hidden">
+      <motion.img
+        src={aioWave}
+        alt=""
+        aria-hidden
+        className="absolute top-10 right-4 w-24 md:w-32 opacity-40 pointer-events-none hidden md:block"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 0.4 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      />
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
