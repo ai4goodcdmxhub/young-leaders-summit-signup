@@ -32,9 +32,9 @@ const EventInfo = () => {
         src={aioWave}
         alt=""
         aria-hidden
-        className="absolute top-10 right-4 w-24 md:w-32 opacity-40 pointer-events-none hidden md:block"
+        className="absolute top-10 right-4 w-24 md:w-32 pointer-events-none hidden md:block"
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.4 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       />
