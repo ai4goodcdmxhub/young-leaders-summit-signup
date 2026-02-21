@@ -6,7 +6,7 @@ const Footer = () => (
       src={aioLying}
       alt=""
       aria-hidden
-      className="absolute bottom-2 right-6 w-20 opacity-40 pointer-events-none hidden sm:block"
+      className="absolute bottom-2 right-6 w-20 pointer-events-none hidden sm:block"
     />
     <div className="container mx-auto px-6 text-center relative z-10">
       <p className="font-display font-semibold text-lg mb-2">

@@ -15,18 +15,18 @@ const HeroSection = () => {
         src={aioSitting}
         alt=""
         aria-hidden
-        className="absolute bottom-8 left-6 w-24 md:w-32 opacity-60 pointer-events-none hidden md:block"
+        className="absolute bottom-8 left-6 w-24 md:w-32 pointer-events-none hidden md:block"
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 0.6, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
       />
       <motion.img
         src={aioRunning}
         alt=""
         aria-hidden
-        className="absolute top-32 right-8 w-20 md:w-28 opacity-50 pointer-events-none hidden lg:block"
+        className="absolute top-32 right-8 w-20 md:w-28 pointer-events-none hidden lg:block"
         initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 0.5, x: 0 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 1.2 }}
       />
 
