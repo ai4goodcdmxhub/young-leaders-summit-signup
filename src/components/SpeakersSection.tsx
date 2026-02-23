@@ -7,6 +7,7 @@ import rubyPhoto from "@/assets/speakers/ruby-acnez.png";
 import danielPhoto from "@/assets/speakers/daniel-gomez.png";
 import dianaPhoto from "@/assets/speakers/diana-rubio.png";
 import yunenPhoto from "@/assets/speakers/yunen-castro.png";
+import henryPhoto from "@/assets/speakers/henry-may.png";
 
 const speakers = [
   { name: "Adriana Caballero", talk: "Cómo diseñar clases que inspiren y conecten en tiempos de IA", day: "Día 1 · 17 Mar", photo: adrianaPhoto },
@@ -17,6 +18,7 @@ const speakers = [
   { name: "Daniel Gómez", talk: "Datos en Acción: Cultura de Datos para Niños", day: "Día 3 · 19 Mar", photo: danielPhoto },
   { name: "Diana Rubio", talk: "IA con Propósito: La Nueva Generación STEM", day: "Día 3 · 19 Mar", photo: dianaPhoto },
   { name: "Yunen Castro", talk: "Canva: un ecosistema digital para la educación", day: "Día 4 · 20 Mar", photo: yunenPhoto },
+  { name: "Henry May", talk: "El currículum oculto del corazón: la próxima frontera en la transformación de la educación", day: "Día 4 · 20 Mar", photo: henryPhoto },
 ];
 
 const SpeakersSection = () => {

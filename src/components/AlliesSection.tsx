@@ -9,6 +9,7 @@ import syncLogo from "@/assets/logos/sync.png";
 import freepikLogo from "@/assets/logos/freepik.png";
 import kidgineerLogo from "@/assets/logos/kidgineers.avif";
 import canvaEduLogo from "@/assets/logos/canva-education.png";
+import coschoolLogo from "@/assets/logos/coschool.png";
 
 const organizers = [
   { name: "Young AI Leaders Community · Mexico City Hub", logo: youngAiLeadersLogo },
@@ -24,6 +25,7 @@ const allies = [
   { name: "Freepik", logo: freepikLogo },
   { name: "KidGineers", logo: kidgineerLogo },
   { name: "Canva for Education", logo: canvaEduLogo },
+  { name: "CoSchool", logo: coschoolLogo },
 ];
 
 const LogoCard = ({ name, logo }: { name: string; logo: string | null }) => (
