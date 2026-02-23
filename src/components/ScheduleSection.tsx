@@ -28,7 +28,7 @@ const days = [
     label: "Miércoles 19",
     blocks: [
       { time: "18:30 – 18:35", type: "intro", content: "Intro" },
-      { time: "18:35 – 19:25", type: "talk", speaker: "Daniel Gómez – F3", title: "" },
+      { time: "18:35 – 19:25", type: "talk", speaker: "Daniel Gómez", title: "Datos en Acción: Cultura de Datos para Niños" },
       { time: "19:25 – 19:35", type: "sponsor", content: "Kidgineers" },
       { time: "19:35 – 20:25", type: "talk", speaker: "Diana Rubio", title: "IA con Propósito: La Nueva Generación STEM" },
       { time: "20:25 – 20:30", type: "close", content: "Cierre" },
@@ -39,7 +39,7 @@ const days = [
     label: "Jueves 20",
     blocks: [
       { time: "18:30 – 18:35", type: "intro", content: "Intro" },
-      { time: "18:35 – 19:25", type: "talk", speaker: "Canva", title: "" },
+      { time: "18:35 – 19:25", type: "talk", speaker: "Yunen Castro", title: "Canva: un ecosistema digital para la educación" },
       { time: "19:25 – 19:35", type: "sponsor", content: "AlexandrIA" },
       { time: "19:35 – 20:25", type: "close", content: "—" },
       { time: "20:25 – 20:30", type: "close", content: "Cierre" },

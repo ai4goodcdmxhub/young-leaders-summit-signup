@@ -6,6 +6,7 @@ import diegoPhoto from "@/assets/speakers/diego-balderas.png";
 import rubyPhoto from "@/assets/speakers/ruby-acnez.png";
 import danielPhoto from "@/assets/speakers/daniel-gomez.png";
 import dianaPhoto from "@/assets/speakers/diana-rubio.png";
+import yunenPhoto from "@/assets/speakers/yunen-castro.png";
 
 const speakers = [
   { name: "Adriana Caballero", talk: "Cómo diseñar clases que inspiren y conecten en tiempos de IA", day: "Día 1 · 17 Mar", photo: adrianaPhoto },
@@ -13,8 +14,9 @@ const speakers = [
   { name: "José Lizarraga", talk: "", day: "Día 2 · 18 Mar", photo: null },
   { name: "Diego Balderas", talk: "Arte y matemáticas: una fusión neurodidáctica", day: "Día 2 · 18 Mar", photo: diegoPhoto },
   { name: "Ruby Acnez", talk: "Arte y matemáticas: una fusión neurodidáctica", day: "Día 2 · 18 Mar", photo: rubyPhoto },
-  { name: "Daniel Gómez", talk: "", day: "Día 3 · 19 Mar", photo: danielPhoto },
+  { name: "Daniel Gómez", talk: "Datos en Acción: Cultura de Datos para Niños", day: "Día 3 · 19 Mar", photo: danielPhoto },
   { name: "Diana Rubio", talk: "IA con Propósito: La Nueva Generación STEM", day: "Día 3 · 19 Mar", photo: dianaPhoto },
+  { name: "Yunen Castro", talk: "Canva: un ecosistema digital para la educación", day: "Día 4 · 20 Mar", photo: yunenPhoto },
 ];
 
 const SpeakersSection = () => {
@@ -44,7 +46,7 @@ const SpeakersSection = () => {
               transition={{ duration: 0.4, delay: i * 0.07 }}
               className="flex flex-col items-center text-center bg-card rounded-xl border border-border p-6 hover:border-secondary transition-colors"
             >
-              <div className="w-20 h-20 rounded-full bg-secondary overflow-hidden flex items-center justify-center mb-4 shadow-md">
+              <div className="w-28 h-28 rounded-full bg-secondary overflow-hidden flex items-center justify-center mb-4 shadow-md">
                 {speaker.photo ? (
                   <img src={speaker.photo} alt={speaker.name} className="w-full h-full object-cover" />
                 ) : (
