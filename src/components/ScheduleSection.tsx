@@ -41,7 +41,7 @@ const days = [
       { time: "18:30 – 18:35", type: "intro", content: "Intro" },
       { time: "18:35 – 19:25", type: "talk", speaker: "Yunen Castro", title: "Canva: un ecosistema digital para la educación" },
       { time: "19:25 – 19:35", type: "sponsor", content: "AlexandrIA" },
-      { time: "19:35 – 20:25", type: "close", content: "—" },
+      { time: "19:35 – 20:25", type: "talk", speaker: "Henry May", title: "El currículum oculto del corazón: la próxima frontera en la transformación de la educación" },
       { time: "20:25 – 20:30", type: "close", content: "Cierre" },
     ],
   },
