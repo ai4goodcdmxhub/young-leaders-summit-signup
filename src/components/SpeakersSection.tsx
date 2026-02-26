@@ -17,7 +17,7 @@ const speakers = [
   { name: "Ruby Acnez", talk: "Arte y matemáticas: una fusión neurodidáctica", day: "Día 2 · 18 Mar", photo: rubyPhoto },
   { name: "Daniel Gómez", talk: "Datos en Acción: Cultura de Datos para Niños", day: "Día 3 · 19 Mar", photo: danielPhoto },
   { name: "Diana Rubio", talk: "IA con Propósito: La Nueva Generación STEM", day: "Día 3 · 19 Mar", photo: dianaPhoto },
-  { name: "Yunen Castro", talk: "Canva: un ecosistema digital para la educación", day: "Día 4 · 20 Mar", photo: yunenPhoto },
+  { name: "Yunuen Castro", talk: "Canva: un ecosistema digital para la educación", day: "Día 4 · 20 Mar", photo: yunenPhoto },
   { name: "Henry May", talk: "El currículum oculto del corazón: la próxima frontera en la transformación de la educación", day: "Día 4 · 20 Mar", photo: henryPhoto },
 ];
 
