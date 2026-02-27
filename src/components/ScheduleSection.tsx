@@ -17,7 +17,7 @@ const days = [
     label: "Martes 18",
     blocks: [
       { time: "18:30 – 18:35", type: "intro", content: "Intro" },
-      { time: "18:35 – 19:25", type: "talk", speaker: "José Lizarraga", title: "" },
+      { time: "18:35 – 19:25", type: "talk", speaker: "José Lizarraga", title: "Co-diseñar con inteligencia artificial: juventudes como arquitectas de futuros justos, creativos y con dignidad" },
       { time: "19:25 – 19:35", type: "sponsor", content: "Freepik" },
       { time: "19:35 – 20:25", type: "talk", speaker: "Diego Balderas & Ruby Acnez", title: "Arte y matemáticas: una fusión neurodidáctica" },
       { time: "20:25 – 20:30", type: "close", content: "Cierre" },
