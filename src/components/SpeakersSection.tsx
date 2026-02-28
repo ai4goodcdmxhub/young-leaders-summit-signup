@@ -13,7 +13,7 @@ import joseLPhoto from "@/assets/speakers/jose-lizarraga.png";
 const speakers = [
   { name: "Adriana Caballero", talk: "Cómo diseñar clases que inspiren y conecten en tiempos de IA", day: "Día 1 · 17 Mar", photo: adrianaPhoto },
   { name: "José Navalpotro", talk: "Escuela, docentes e IAG: Una nueva educación", day: "Día 1 · 17 Mar", photo: joseNPhoto },
-  { name: "José Lizarraga", talk: "Co-diseñar con inteligencia artificial: juventudes como arquitectas de futuros justos, creativos y con dignidad", day: "Día 2 · 18 Mar", photo: joseLPhoto },
+  { name: "José Lizárraga", talk: "Co-diseñar con inteligencia artificial: juventudes como arquitectas de futuros justos, creativos y con dignidad", day: "Día 2 · 18 Mar", photo: joseLPhoto },
   { name: "Diego Balderas", talk: "Arte y matemáticas: una fusión neurodidáctica", day: "Día 2 · 18 Mar", photo: diegoPhoto },
   { name: "Ruby Acnez", talk: "Arte y matemáticas: una fusión neurodidáctica", day: "Día 2 · 18 Mar", photo: rubyPhoto },
   { name: "Daniel Gómez", talk: "Datos en Acción: Cultura de Datos para Niños", day: "Día 3 · 19 Mar", photo: danielPhoto },
