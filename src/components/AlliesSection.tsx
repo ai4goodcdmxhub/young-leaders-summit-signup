@@ -27,6 +27,7 @@ const allies = [
   { name: "KidGineers", logo: kidgineerLogo },
   { name: "Canva for Education", logo: canvaEduLogo },
   { name: "CoSchool", logo: coschoolLogo },
+  { name: "Cuantrix", logo: cuantrixLogo },
 ];
 
 const LogoCard = ({ name, logo }: { name: string; logo: string | null }) => (
