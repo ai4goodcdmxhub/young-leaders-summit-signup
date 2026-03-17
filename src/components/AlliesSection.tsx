@@ -7,7 +7,7 @@ import cletecLogo from "@/assets/logos/cletec.png";
 import scienkoLogo from "@/assets/logos/scienko.png";
 import syncLogo from "@/assets/logos/sync.png";
 import freepikLogo from "@/assets/logos/freepik.png";
-import kidgineerLogo from "@/assets/logos/kidgineers.avif";
+import kidgineerLogo from "@/assets/logos/kidgeeniers.png";
 import canvaEduLogo from "@/assets/logos/canva-education.png";
 import coschoolLogo from "@/assets/logos/coschool.png";
 import cuantrixLogo from "@/assets/logos/cuantrix.png";
