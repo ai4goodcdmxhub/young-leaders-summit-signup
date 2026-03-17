@@ -15,7 +15,7 @@ const speakers = [
   { name: "José Navalpotro", talk: "Escuela, docentes e IAG: Una nueva educación", day: "Día 1 · 17 Mar", photo: joseNPhoto },
   { name: "José Lizárraga", talk: "Co-diseñar con inteligencia artificial: juventudes como arquitectas de futuros justos, creativos y con dignidad", day: "Día 2 · 18 Mar", photo: joseLPhoto },
   { name: "Diego Balderas", talk: "Arte y matemáticas: una fusión neurodidáctica", day: "Día 2 · 18 Mar", photo: diegoPhoto },
-  { name: "Ruby Acnez", talk: "Arte y matemáticas: una fusión neurodidáctica", day: "Día 2 · 18 Mar", photo: rubyPhoto },
+  { name: "Ruby Aceneth", talk: "Arte y matemáticas: una fusión neurodidáctica", day: "Día 2 · 18 Mar", photo: rubyPhoto },
   { name: "Daniel Gómez", talk: "Datos en Acción: Cultura de Datos para Niños", day: "Día 3 · 19 Mar", photo: danielPhoto },
   { name: "Diana Rubio", talk: "IA con Propósito: La Nueva Generación STEM", day: "Día 3 · 19 Mar", photo: dianaPhoto },
   { name: "Yunuen Castro", talk: "Canva: un ecosistema digital para la educación", day: "Día 4 · 20 Mar", photo: yunenPhoto },
