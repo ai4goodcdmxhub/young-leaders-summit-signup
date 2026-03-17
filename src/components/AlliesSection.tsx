@@ -25,7 +25,7 @@ const allies = [
   { name: "Scienko", logo: scienkoLogo },
   { name: "Sync.", logo: syncLogo },
   { name: "Freepik", logo: freepikLogo },
-  { name: "KidGineers", logo: kidgineerLogo },
+  { name: "KidGeeniers", logo: kidgineerLogo },
   { name: "Canva for Education", logo: canvaEduLogo },
   { name: "CoSchool", logo: coschoolLogo },
   { name: "Cuantrix", logo: cuantrixLogo },
