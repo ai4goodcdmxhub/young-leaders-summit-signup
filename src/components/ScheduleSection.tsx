@@ -7,7 +7,8 @@ const days = [
     blocks: [
       { time: "18:30 – 18:35", type: "intro", content: "Intro" },
       { time: "18:35 – 19:25", type: "talk", speaker: "Adriana Caballero", title: "Cómo diseñar clases que inspiren y conecten en tiempos de IA" },
-      { time: "19:25 – 20:15", type: "talk", speaker: "José Navalpotro", title: "Escuela, docentes e IAG: Una nueva educación" },
+      { time: "19:25 – 19:35", type: "sponsor", content: "KidGineers" },
+      { time: "19:35 – 20:25", type: "talk", speaker: "José Navalpotro", title: "Escuela, docentes e IAG: Una nueva educación" },
       { time: "20:25 – 20:30", type: "close", content: "Cierre" },
     ],
   },
@@ -28,7 +29,7 @@ const days = [
     blocks: [
       { time: "18:30 – 18:35", type: "intro", content: "Intro" },
       { time: "18:35 – 19:25", type: "talk", speaker: "Daniel Gómez", title: "Datos en Acción: Cultura de Datos para Niños" },
-      { time: "19:25 – 19:35", type: "sponsor", content: "Kidgineers" },
+      { time: "19:25 – 19:35", type: "sponsor", content: "ReDI School" },
       { time: "19:35 – 20:25", type: "talk", speaker: "Diana Rubio", title: "IA con Propósito: La Nueva Generación STEM" },
       { time: "20:25 – 20:30", type: "close", content: "Cierre" },
     ],
