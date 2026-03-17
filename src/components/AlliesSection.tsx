@@ -8,6 +8,7 @@ import scienkoLogo from "@/assets/logos/scienko.png";
 import syncLogo from "@/assets/logos/sync.png";
 import freepikLogo from "@/assets/logos/freepik.png";
 import kidgineerLogo from "@/assets/logos/kidgineers.avif";
+import kidgeeniers2Logo from "@/assets/logos/kidgeeniers-2.png";
 import canvaEduLogo from "@/assets/logos/canva-education.png";
 import coschoolLogo from "@/assets/logos/coschool.png";
 import cuantrixLogo from "@/assets/logos/cuantrix.png";
@@ -26,6 +27,7 @@ const allies = [
   { name: "Sync.", logo: syncLogo },
   { name: "Freepik", logo: freepikLogo },
   { name: "KidGeeniers", logo: kidgineerLogo },
+  { name: "KidGeeniers™", logo: kidgeeniers2Logo },
   { name: "Canva for Education", logo: canvaEduLogo },
   { name: "CoSchool", logo: coschoolLogo },
   { name: "Cuantrix", logo: cuantrixLogo },
